@@ -4,8 +4,8 @@ combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_MORTAREA)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_SUDDENDEATH)
 
 function onGetFormulaValues(player, level, maglevel)
-	local min = (level / 5) + (maglevel * 4.605) + 28
-	local max = (level / 5) + (maglevel * 7.395) + 46
+	local min = (level / 5) + (maglevel * 4.605) + 56000
+	local max = (level / 5) + (maglevel * 7.395) + 112000
 	return -min, -max
 end
 
@@ -22,7 +22,7 @@ rune:group("attack")
 rune:name("sudden instant death rune")
 rune:castSound(SOUND_EFFECT_TYPE_SPELL_OR_RUNE)
 rune:impactSound(SOUND_EFFECT_TYPE_SPELL_SUDDENDEATH_RUNE)
-rune:runeId(31559999)
+rune:runeId(3154)
 rune:allowFarUse(true)
 rune:charges(30)
 rune:level(1)

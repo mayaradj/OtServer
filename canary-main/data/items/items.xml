@@ -7651,22 +7651,19 @@
 		<attribute key="charges" value="1"/>
 		<attribute key="weight" value="210"/>
 	</item>
-	<item id="3154" article="a" name="spell rune">
-		<attribute key="primarytype" value="utilities"/>
+	
+	<item id="3154" article="a" name="sudden instant death rune">
+		<attribute key="primarytype" value="attack runes"/>
 		<attribute key="type" value="rune"/>
+		<attribute key="charges" value="30"/>
 		<attribute key="weight" value="120"/>
 	</item>
+	
 	<item id="3155" article="a" name="sudden death rune">
 		<attribute key="primarytype" value="attack runes"/>
 		<attribute key="type" value="rune"/>
 		<attribute key="runespellname" value="adori gran mort"/>
 		<attribute key="charges" value="3"/>
-		<attribute key="weight" value="70"/>
-	</item>
-	<item id="31559999" article="a" name="sudden instant death rune">
-		<attribute key="primarytype" value="attack runes"/>
-		<attribute key="type" value="rune"/>
-		<attribute key="charges" value="30"/>
 		<attribute key="weight" value="70"/>
 	</item>
 	<item id="3156" article="a" name="wild growth rune">
