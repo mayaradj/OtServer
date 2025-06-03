@@ -5,9 +5,9 @@
 useAnyDatapackFolder = false
 
 -- for otservergloval
--- dataPackDirectory = "data-otservbr-global"
+dataPackDirectory = "data-otservbr-global"
 -- for canary
-dataPackDirectory = "data-canary"
+--dataPackDirectory = "data-canary"
  
 -- Don't change this unless you know what you're doing
 coreDirectory = "data"
@@ -32,7 +32,7 @@ maintainModeMessage = ""
 -- NOTE: removeBeginningWeaponAmmunition: spears, arrows, bolt have endless ammo (allows training for paladins)
 -- NOTE: refundManaOnBeginningWeapons: wand of vortex and snakebite refund mana used (allows training for mages)
 -- NOTE: loginProtectionTime in MS
-worldType = "pvp"
+worldType = "no-pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 7
 pzLocked = 60 * 1000
@@ -62,15 +62,16 @@ cleanProtectionZones = false
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25,
 -- It's recommended to use a range like min 50 in this function, otherwise you will be disconnected after equipping two-handed distance weapons.
-ip = "127.0.0.1"
+--ip = "127.0.0.1"
+ip = "189.31.117.142"
+--ip = "malyot.ddns.net"
 allowOldProtocol = false
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 0
--- serverName = "OTServBR-Global"
-serverName = "Canary"
+serverName = "OTServBR-Global"
 serverMotd = "Welcome to the OTServBR-Global!"
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
@@ -399,16 +400,16 @@ pushWhenAttacking = false
 
 -- for otservergloval
 
--- toggleDownloadMap = true
--- mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v3.2.0/otservbr.otbm"
--- mapName = "otservbr"
--- mapAuthor = "OpenTibiaBR"
+toggleDownloadMap = true
+mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v3.2.0/otservbr.otbm"
+mapName = "otservbr"
+mapAuthor = "OpenTibiaBR"
 
 -- for canary
-toggleDownloadMap = false
-mapName = "canary"
-mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v3.0.0/otservbr.otbm"
-mapAuthor = "OpenTibiaBR"
+-- toggleDownloadMap = false
+-- mapName = "canary"
+-- mapDownloadUrl = "https://github.com/opentibiabr/canary/releases/download/v3.0.0/otservbr.otbm"
+-- mapAuthor = "OpenTibiaBR"
 
 
 -- Party List limitations
@@ -419,9 +420,9 @@ partyListMaxDistance = 30
 -- Custom Map
 -- NOTE: toggleMapCustom set to true will load all maps in custom map folder
 -- for otservergloval
--- toggleMapCustom = true
+toggleMapCustom = true
 -- for canary
-toggleMapCustom = false
+-- toggleMapCustom = false
 
 -- Market
 -- NOTE: marketRefreshPricesInterval (in minutes, minimum is 1 minute)
@@ -522,11 +523,24 @@ sortLootByChance = false
 -- lowLevelBonusExp works up to level 50
 rateUseStages = false
 lowLevelBonusExp = 50
-rateExp = 1
-rateSkill = 1
-rateLoot = 1
-rateMagic = 1
-rateSpawn = 1
+
+rateExp = 200000
+rateSkill = 20000
+rateLoot = 10000
+rateMagic = 20000
+rateSpawn = 50
+
+--rateExp = 200
+--rateSkill = 20
+--rateLoot = 10
+--rateMagic = 20
+--rateSpawn = 5
+
+--rateExp = 1
+--rateSkill = 1
+--rateLoot = 1
+--rateMagic = 1
+--rateSpawn = 1
 
 -- Killing in the name of Quest
 rateKillingInTheNameOfPoints = 1
