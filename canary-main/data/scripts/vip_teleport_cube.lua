@@ -17,8 +17,9 @@ local teleportLocations  = {
     { name="Gray beach", position = Position(33447, 31323, 9) },
     { name="Issavi", position = Position(33921, 31477, 5) },
     { name="Krailos", position = Position(33655, 31666, 8) },
-    { name="Hunts Teleports", position = Position(31891, 32024, 8) },
-    { name="Forge", position = Position(31646, 32043, 8) },
+--     { name="Hunts Teleports", position = Position(31891, 32024, 8) },
+--     { name="Forge", position = Position(31646, 32043, 8) },
+		{ name="Vip Island", position = Position(846, 1035, 7) },
 }
 
 local teleportItemID = 31633 -- Replace with the actual item ID
@@ -30,9 +31,9 @@ function teleportEvent.onUse(player, item, fromPosition, target, toPosition, isH
         player:sendCancelMessage("Somente jogadores VIP podem usar este item!")
         return true
     end
-   
+
     player:registerEvent("TeleportModalWindowLocations")
-   
+
     local teleportWindow = ModalWindow(1, "Selecione um Local")
     for i, location in ipairs(teleportLocations) do
         teleportWindow:addChoice(i, location.name)
@@ -42,7 +43,7 @@ function teleportEvent.onUse(player, item, fromPosition, target, toPosition, isH
     teleportWindow:setDefaultEnterButton(1)
     teleportWindow:setDefaultEscapeButton(2)
     teleportWindow:sendToPlayer(player)
-   
+
     return true
 end
 
@@ -53,14 +54,14 @@ local modalEvent = CreatureEvent("TeleportModalWindowLocations")
 
 function modalEvent.onModalWindow(player, modalWindowId, buttonId, choiceId)
     player:unregisterEvent("TeleportModalWindowLocations")
-   
+
     if buttonId == 1 then
         local selectedLocation = teleportLocations[choiceId]
         if selectedLocation then
             return player:ProcessTeleport(selectedLocation.position)
         end
     end
-   
+
     return true
 end
 
@@ -77,9 +78,9 @@ function Player.ProcessTeleport(self, position)
         self:sendTextMessage(MESSAGE_STATUS_SMALL, "Você não pode se teleportar enquanto está protegido por uma zona de paz.")
         return false
     end
-   
+
     self:teleportTo(position)
     self:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-   
+
     return true
 end
