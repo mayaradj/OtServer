@@ -13,7 +13,7 @@ function checkvip.onStepIn(creature, item, position, fromPosition)
 		return true
 	end
 
-	local vipteleport = Position(32369, 32234, 7)
+	local vipteleport = Position(846, 1035,  7)
 	player:teleportTo(vipteleport)
 	player:getPosition():sendMagicEffect(CONST_ME_HOLYAREA)
 	player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Welcome to Vip Island, have fun!")
