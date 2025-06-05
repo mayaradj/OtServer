@@ -19,6 +19,7 @@ local teleportLocations  = {
     { name="Krailos", position = Position(33655, 31666, 8) },
 --     { name="Hunts Teleports", position = Position(31891, 32024, 8) },
 --     { name="Forge", position = Position(31646, 32043, 8) },
+		{ name="NPC Island", position = Position(992, 1029, 7) },
 		{ name="Vip Island", position = Position(846, 1035, 7) },
 }
 
