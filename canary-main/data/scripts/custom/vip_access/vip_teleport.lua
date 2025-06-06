@@ -1,24 +1,41 @@
-local failPosition = Position(32369, 32241, 7)
+-- Deixar vipSystemEnabled = true no config.lua
+-- Colocar em canary/data-otservbr-global/scripts/movements/teleport/teleport_vip.lua
+-- Só entrar no remere's colocar um teleport, tirar as coords dele e colocar essa Action Id: 34534
 
-local vipPortal = MoveEvent()
+local coords = {
+    viplocation = { -- Lugar q vai teleportar se for vip
+        x = 1906,
+        y = 1258,
+        z = 7
+    },
+    nonviplocation = { -- Lugar q vai teleportar se n for vip
+        x = 32369,
+        y = 32241,
+        z = 7
+    }
+}
 
-function vipPortal.onStepIn(creature, item, position, fromPosition)
+local tpvip = MoveEvent()
+
+function tpvip.onStepIn(creature, item, position, fromPosition)
     local player = creature:getPlayer()
-
     if not player then
-        return true
+        return false
     end
-
     if player:isVip() then
-        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Bem-vindo a area VIP!")
-        return true
+        local msg = "Seja bem-vindo."
+        player:sendTextMessage(MESSAGE_STATUS, msg)
+        player:teleportTo(coords.viplocation)
+        player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
     else
-        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Voce nao possui acesso VIP.")
-        player:teleportTo(failPosition)
-        return true
+        local msg = "Voce nao eh vip, Be Gone!"
+        player:sendCancelMessage(msg)
+        player:teleportTo(coords.nonviplocation)
+        player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
     end
+    return true
 end
 
-vipPortal:type("stepin")
-vipPortal:aid(40001)
-vipPortal:register()
+tpvip:type("stepin")
+tpvip:aid(40001)
+tpvip:register()
