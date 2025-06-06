@@ -1,6 +1,6 @@
 -- Deixar vipSystemEnabled = true no config.lua
 -- Colocar em canary/data-otservbr-global/scripts/movements/teleport/teleport_vip.lua
--- Só entrar no remere's colocar um teleport, tirar as coords dele e colocar essa Action Id: 34534
+-- Só entrar no remere's colocar um teleport, tirar as coords dele e colocar essa Action Id: 40001
 
 local coords = {
     viplocation = { -- Lugar q vai teleportar se for vip
