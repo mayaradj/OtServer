@@ -42,9 +42,6 @@
 	<npc centerx="1002" centery="1044" centerz="7" radius="1">
 		<npc name="Esrik" x="-1" y="1" z="7" spawntime="60" direction="2" />
 	</npc>
-	<npc centerx="828" centery="1045" centerz="7" radius="1">
-		<npc name="Archery" x="1" y="0" z="7" spawntime="60" direction="1" />
-	</npc>
 	<npc centerx="1013" centery="1045" centerz="7" radius="1">
 		<npc name="Runtel Blackspark" x="-1" y="0" z="7" spawntime="60" />
 	</npc>
@@ -54,35 +51,14 @@
 	<npc centerx="984" centery="1048" centerz="7" radius="1">
 		<npc name="Flint" x="0" y="0" z="7" spawntime="60" direction="1" />
 	</npc>
-	<npc centerx="840" centery="1049" centerz="7" radius="1">
-		<npc name="Benjamin" x="1" y="0" z="7" spawntime="60" direction="1" />
-	</npc>
-	<npc centerx="864" centery="1050" centerz="7" radius="1">
-		<npc name="Imbuement Assistant" x="-1" y="0" z="7" spawntime="60" direction="3" />
-	</npc>
 	<npc centerx="1004" centery="1050" centerz="7" radius="1">
 		<npc name="Yaman" x="0" y="1" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="828" centery="1053" centerz="7" radius="1">
-		<npc name="Runtel Blackspark" x="1" y="0" z="7" spawntime="60" direction="1" />
 	</npc>
 	<npc centerx="990" centery="1055" centerz="7" radius="1">
 		<npc name="Nah'Bob" x="1" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="998" centery="1056" centerz="7" radius="1">
 		<npc name="Rashid of Island" x="0" y="-1" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="840" centery="1057" centerz="7" radius="1">
-		<npc name="Naji" x="1" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="863" centery="1058" centerz="7" radius="1">
-		<npc name="The Lootmonger" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="828" centery="1061" centerz="7" radius="1">
-		<npc name="Zuma Magehide" x="1" y="0" z="7" spawntime="60" direction="1" />
-	</npc>
-	<npc centerx="841" centery="1069" centerz="7" radius="1">
-		<npc name="Talila" x="1" y="-1" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="32354" centery="32226" centerz="7" radius="1">
 		<npc name="Cassino" x="0" y="0" z="7" spawntime="60" />
