@@ -32,7 +32,7 @@ maintainModeMessage = ""
 -- NOTE: removeBeginningWeaponAmmunition: spears, arrows, bolt have endless ammo (allows training for paladins)
 -- NOTE: refundManaOnBeginningWeapons: wand of vortex and snakebite refund mana used (allows training for mages)
 -- NOTE: loginProtectionTime in MS
-worldType = "pvp"
+worldType = "no-pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 7
 pzLocked = 60 * 1000
@@ -288,9 +288,9 @@ onlyPremiumAccount = false
 stashMoving = false
 stashItemCount = 5000
 depotChest = 4
-autoLoot = false
+autoLoot = true
 autoBank = false
-toggleGoldPouchAllowAnything = false
+toggleGoldPouchAllowAnything = true
 toggleGoldPouchQuickLootOnly = false
 toggleServerIsRetroPVP = false
 toggleTravelsFree = false
@@ -526,17 +526,17 @@ sortLootByChance = false
 rateUseStages = false
 lowLevelBonusExp = 50
 
-rateExp = 200000
-rateSkill = 20000
-rateLoot = 10000
-rateMagic = 20000
-rateSpawn = 50
+--rateExp = 200000
+--rateSkill = 20000
+--rateLoot = 10000
+--rateMagic = 20000
+--rateSpawn = 50
 
---rateExp = 200
---rateSkill = 20
---rateLoot = 10
---rateMagic = 20
---rateSpawn = 5
+rateExp = 200
+rateSkill = 20
+rateLoot = 1
+rateMagic = 20
+rateSpawn = 2
 
 --rateExp = 1
 --rateSkill = 1

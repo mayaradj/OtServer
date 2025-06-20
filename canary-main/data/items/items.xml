@@ -7651,14 +7651,12 @@
 		<attribute key="charges" value="1"/>
 		<attribute key="weight" value="210"/>
 	</item>
-	
 	<item id="3154" article="a" name="sudden instant death rune">
 		<attribute key="primarytype" value="attack runes"/>
 		<attribute key="type" value="rune"/>
 		<attribute key="charges" value="30"/>
 		<attribute key="weight" value="120"/>
 	</item>
-	
 	<item id="3155" article="a" name="sudden death rune">
 		<attribute key="primarytype" value="attack runes"/>
 		<attribute key="type" value="rune"/>
@@ -46987,7 +46985,7 @@ hands of its owner. Granted by TibiaRoyal.com"/>
 		<attribute key="wrapableto" value="23398"/>
 		<attribute key="weight" value="850"/>
 	</item>
-	<item id="23721" article="a" name="gold pouch">
+	<item id="23721" article="a" name="loot pouch">
 		<attribute key="description" value="A infinity bag where you can hold coins."/>
 		<attribute key="containersize" value="20"/>
 		<attribute key="movable" value="0"/>
@@ -77155,7 +77153,7 @@ Granted by TibiaGoals.com"/>
 		<attribute key="loottype" value="creature products" />
 		<attribute key="primarytype" value="creature products" />
 		<attribute key="weight" value="30" />
-	</item>	
+	</item>
 	<item id="45657" article="a" name="preserved yellow seed">
 		<attribute key="loottype" value="creature products" />
 		<attribute key="primarytype" value="creature products" />
@@ -80974,4 +80972,3 @@ Granted by TibiaGoals.com"/>
 		<attribute key="primarytype" value="pillars"/>
 	</item>
 </items>
-
