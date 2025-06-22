@@ -42,10 +42,10 @@
 	<npc centerx="1002" centery="1044" centerz="7" radius="1">
 		<npc name="Esrik" x="-1" y="1" z="7" spawntime="60" direction="2" />
 	</npc>
-	<npc centerx="1013" centery="1045" centerz="7" radius="1">
+	<npc centerx="1014" centery="1045" centerz="7" radius="1">
 		<npc name="Runtel Blackspark" x="-1" y="0" z="7" spawntime="60" />
 	</npc>
-	<npc centerx="1019" centery="1046" centerz="7" radius="1">
+	<npc centerx="1020" centery="1046" centerz="7" radius="1">
 		<npc name="Zuma Magehide" x="0" y="-1" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="984" centery="1048" centerz="7" radius="1">
