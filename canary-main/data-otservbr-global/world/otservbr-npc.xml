@@ -951,6 +951,9 @@
 	<npc centerx="829" centery="1065" centerz="7" radius="1">
 		<npc name="Zuma Magehide" x="0" y="0" z="7" spawntime="60" direction="1" />
 	</npc>
+	<npc centerx="842" centery="1068" centerz="7" radius="1">
+		<npc name="Backpack Seller" x="0" y="0" z="7" spawntime="60" direction="1" />
+	</npc>
 	<npc centerx="10320" centery="10089" centerz="7" radius="1">
 		<npc name="Sane Mage" x="0" y="0" z="7" spawntime="60" />
 	</npc>
