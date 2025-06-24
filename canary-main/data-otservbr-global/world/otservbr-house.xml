@@ -994,4 +994,5 @@
 	<house name="Marketplace 3" houseid="3695" entryx="33953" entryy="31513" entryz="7" rent="400000" townid="22" size="130" clientid="48008" beds="3" />
 	<house name="Hanging Gardens 1" houseid="3696" entryx="33933" entryy="31479" entryz="4" rent="400000" townid="22" size="178" clientid="48009" beds="5" />
 	<house name="House Vip 1" houseid="3697" entryx="839" entryy="1076" entryz="7" rent="100000" townid="32" size="99" clientid="0" beds="0" />
+	<house name="Gods House" houseid="3698" entryx="936" entryy="1066" entryz="7" rent="0" townid="32" size="226" clientid="0" beds="10" />
 </houses>

@@ -24,11 +24,11 @@ function tpvip.onStepIn(creature, item, position, fromPosition)
     end
     if player:isVip() then
         local msg = "Seja bem-vindo."
-        player:sendTextMessage(MESSAGE_STATUS, msg)
+        player:sendTextMessage(MESSAGE_EVENT_ADVANCE, msg)
         player:teleportTo(coords.viplocation)
         player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
     else
-        local msg = "Voce nao eh vip, Be Gone!"
+        local msg = "Voce nao é vip!"
         player:sendCancelMessage(msg)
         player:teleportTo(coords.nonviplocation)
         player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
