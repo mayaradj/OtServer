@@ -19,7 +19,10 @@ function playerLoginGlobal.onLogin(player)
 	else
 		loginStr = string.format("Your last visit in %s: %s.", SERVER_NAME, os.date("%d %b %Y %X", player:getLastLoginSaved()))
 	end
-	player:sendTextMessage(MESSAGE_LOGIN, loginStr)
+	--player:sendTextMessage(MESSAGE_LOGIN, loginStr)
+
+	-- Battle Pass
+	player:registerEvent("BattlePassKill")
 
 	-- Promotion
 	local vocation = player:getVocation()
@@ -34,14 +37,14 @@ function playerLoginGlobal.onLogin(player)
 	end
 
 	-- Boosted
-	player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, string.format("Today's boosted creature: %s.\nBoosted creatures yield more experience points, carry more loot than usual, and respawn at a faster rate.", Game.getBoostedCreature()))
-	player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, string.format("Today's boosted boss: %s.\nBoosted bosses contain more loot and count more kills for your Bosstiary.", Game.getBoostedBoss()))
+	--player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, string.format("Today's boosted creature: %s.\nBoosted creatures yield more experience points, carry more loot than usual, and respawn at a faster rate.", Game.getBoostedCreature()))
+	--player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, string.format("Today's boosted boss: %s.\nBoosted bosses contain more loot and count more kills for your Bosstiary.", Game.getBoostedBoss()))
 
 	-- Rewards
-	local rewards = #player:getRewardList()
+	--[[ local rewards = #player:getRewardList()
 	if rewards > 0 then
 		player:sendTextMessage(MESSAGE_LOGIN, string.format("You have %d reward%s in your reward chest.", rewards, rewards > 1 and "s" or ""))
-	end
+	end ]]
 
 	-- Rate events:
 	if SCHEDULE_EXP_RATE ~= 100 then
@@ -91,7 +94,7 @@ function playerLoginGlobal.onLogin(player)
 			if vipBonusExp > 0 and player:isVip() then
 				vipBonusExp = (vipBonusExp > 100 and 100) or vipBonusExp
 				baseRate = baseRate * (1 + (vipBonusExp / 100))
-				player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, "Normal base xp is: " .. baseRate .. "%, because you are VIP, bonus of " .. vipBonusExp .. "%")
+				--player:sendTextMessage(MESSAGE_BOOSTED_CREATURE, "Normal base xp is: " .. baseRate .. "%, because you are VIP, bonus of " .. vipBonusExp .. "%")
 			end
 		end
 
@@ -148,12 +151,12 @@ function playerLoginGlobal.onLogin(player)
 	end
 
 	-- Change support outfit to a normal outfit to open customize character without crashes
-	local playerOutfit = player:getOutfit()
+	--[[ local playerOutfit = player:getOutfit()
 	if table.contains({ 75, 266, 302 }, playerOutfit.lookType) then
 		playerOutfit.lookType = 136
 		playerOutfit.lookAddons = 0
 		player:setOutfit(playerOutfit)
-	end
+	end ]]
 
 	player:initializeLoyaltySystem()
 	player:registerEvent("PlayerDeath")
