@@ -1,4 +1,4 @@
-local REWARD_CHEST_UNIQUEID = 12345  -- Unique ID do baú no mapa
+local REWARD_CHEST_UNIQUEID = 23625  -- Unique ID do baú no mapa
 local STORAGE = 90001                -- Storage para controle de uso
 
 local rewardChest = Action()
