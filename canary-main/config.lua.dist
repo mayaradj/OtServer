@@ -293,15 +293,17 @@ autoBank = false
 toggleGoldPouchAllowAnything = true
 toggleGoldPouchQuickLootOnly = false
 toggleServerIsRetroPVP = false
-toggleTravelsFree = false
+toggleTravelsFree = true
+--toggleTravelsFree = false
 buyAolCommandFee = 0
 buyBlessCommandFee = 0
 teleportPlayerToVocationRoom = true
-toggleReceiveReward = false
+toggleReceiveReward = true
 randomMonsterSpawn = false
 lootPouchMaxLimit = 2000
 storeInboxMaxLimit = 2000
-enablePlayerPutItemInAmmoSlot = false
+enablePlayerPutItemInAmmoSlot = true
+--enablePlayerPutItemInAmmoSlot = false
 startStreakLevel = 0
 showLootsInBestiary = false
 minTownIdToBankTransferFromMain = 4
@@ -309,19 +311,22 @@ enableSupportOutfit = true
 
 -- Teleport summon
 -- Set to true will never remove the summon
-teleportSummons = false
+teleportSummons = true
+--teleportSummons = false
 
 -- NOTE: true will allow the /reload command to be used
 -- NOTE: Using this script might cause unwanted changes
 -- This script forces a reload in the entire server, this means that everything that is stored in memory might stop to work properly and/or completely, this script should be used in test environments only
-allowReload = false
+allowReload = true
 
 -- Stamina in Trainers
-staminaTrainer = false
+staminaTrainer = true
+--staminaTrainer = false
 staminaTrainerDelay = 5
 staminaTrainerGain = 1
 -- Stamina in PZ
-staminaPz = false
+staminaPz = true
+--staminaPz = false
 staminaOrangeDelay = 1
 staminaGreenDelay = 5
 staminaPzGain = 1
@@ -349,7 +354,7 @@ toggleImbuementNonAggressiveFightOnly = false
 -- NOTE: Only quests that are in the "freequests.lua" script table will work
 -- toggleFreeQuest = enable/disable the system
 -- freeQuestStage = if you add more quests to the table, change this value to run freeQuest again
-toggleFreeQuest = false
+toggleFreeQuest = true
 freeQuestStage = 1
 
 -- Deaths
@@ -371,7 +376,8 @@ Setting this to false may pose risks; if a house is abandoned and contains a lar
 -- Periods: daily/weekly/monthly/yearly/never
 -- Base: sqm,rent,sqm+rent
 toggleCyclopediaHouseAuction = true
-daysToCloseBid = 7
+daysToCloseBid = 2
+--daysToCloseBid = 7
 housePriceRentMultiplier = 0.0
 housePriceEachSQM = 1000
 houseRentPeriod = "monthly"
@@ -464,11 +470,11 @@ resetSessionsOnStartup = false
 -- NOTE: experienceDisplayRates: set to false to ignore exp rate or true to include exp rate
 -- NOTE: disableLegacyRaids: set to true to disable legacy XML raids
 allowChangeOutfit = true
-toggleMountInProtectionZone = false
+toggleMountInProtectionZone = true
 freePremium = true
 kickIdlePlayerAfterMinutes = 15
 maxMessageBuffer = 4
-emoteSpells = false
+emoteSpells = true
 allowWalkthrough = true
 coinPacketSize = 25
 coinImagesURL = "http://127.0.0.1:8080/images/store/"
@@ -532,11 +538,17 @@ lowLevelBonusExp = 50
 --rateMagic = 20000
 --rateSpawn = 50
 
-rateExp = 200
-rateSkill = 20
-rateLoot = 1
-rateMagic = 20
-rateSpawn = 2
+rateExp = 900
+rateSkill = 100
+rateLoot = 1.2
+rateMagic = 100
+rateSpawn = 1.3
+
+--rateExp = 260
+--rateSkill = 30
+--rateLoot = 1.2
+--rateMagic = 30
+--rateSpawn = 2
 
 --rateExp = 1
 --rateSkill = 1
