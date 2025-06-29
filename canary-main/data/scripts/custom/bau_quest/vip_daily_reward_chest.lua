@@ -1,7 +1,7 @@
 local config = {
 	storage = 123123, -- Storage para verificar se o jogador pode pegar novamente.
 	actionId = 12331, -- action id do baú.
-	timeToReward = 000.1, -- Tempo em horas pra pegar o bau novamente.
+	timeToReward = 24, -- Tempo em horas pra pegar o bau novamente.
 	itemsList = {
 
 		{id = 3043, count = 30, chance = 75},
